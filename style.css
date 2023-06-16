@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    background-color: #f9fafe;
+    max-width: max-content;
+    margin: auto;
+    padding-bottom: 3%;
+}   
+
+p {
+    color: hsl(219, 14%, 63%);
+    font-size: 0.8rem;
+}
+
+#content {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#upper-tab {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10% 5% 5% 5%;
+}
+
+#upper-tab-left-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#notifications-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: hsl(224, 21%, 14%);
+    margin-right: 5px;
+}
+
+#active-notifications-bg {
+    background-color: hsl(219, 85%, 26%);
+    background-position: center;
+    text-align: center;
+    border-radius: 7px;
+    width: 33px;
+    height: 25px;
+    padding-top: 1px;
+}
+
+#active-notifications-amount {
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    float: top;
+}
+
+#mark-read-button {
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(219, 12%, 42%);
+}
+
+#notifications-container {
+    padding: 5% 5% 0% 5%;
+}
+
+.notification-box {
+    background-color: hsl(210, 60%, 98%);
+    margin-bottom: 3.3%;
+    padding: 5%;
+}
+
+/*profile pic, action, potential target image for notif*/
+.notification-action-container {
+    display: flex; 
+}
+
+.notification-profile-img {
+    height: 40px;
+    margin-right: 4%;
+}
+
+.username {
+    color: black;
+    font-weight: 800;
+}
+
+.notification-body-text {
+    color: hsl(219, 12%, 42%);
+}
+
+.notification-source-text {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+.notification-group-name {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+/*Spacing*/
+.username, .notification-body-text, .notification-source-text, .notification-group-name {
+    margin-right: 6px;
+}
+
+/*text based hover states*/
+.username:hover, .notification-source-text:hover, .notification-group-name:hover, #mark-read-button:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.notification-message {
+    margin-top: 10px;
+    margin-left: 17%;/*could be a better solution*/
+    padding: 15px 25px 15px 15px;
+    outline: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+    color: hsl(219, 12%, 42%);
+}
+
+.notification-message:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.notification-action-to-image {
+    height: 45px;
+    margin-left: 14px;
+}
+
+.notification-action-to-image:hover {
+    border: solid hsl(205, 33%, 90%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*visibility will be handled through javascript or html to individualize*/
+.unread-icon {
+    height: 8px;
+    width: 8px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.time-indicator {
+    display:inline-block;
+}
+
+@media (min-width: 650px) {
+    #content{
+        width: 650px;
+        border-radius: 2%;
+        margin-top: 10%;
+    }
+    #upper-tab {
+        padding: 6% 5% 6% 5%;
+    }
+    #notifications-title {
+        font-size: 1.3rem;
+    }
+    #active-notifications-bg {
+        height: 22px;
+        width:26px;
+    }   
+    #active-notifications-amount {
+        font-size: 0.84rem;
+    }
+    #mark-read-button {
+        font-size: 0.9rem;
+    }
+    #notifications-container {
+        padding: 0% 5% 0% 5%;
+    } 
+    .notification-box {
+        padding: 1.5%;
+        margin-bottom: 1.5%;
+    } 
+    p {
+        font-size: 0.88rem;
+    }
+    .notification-message {
+        margin-left: 11%;
+    }
+    .notification-action-to-image {
+        margin-left: 148px;
+    }
+}
