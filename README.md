@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Link to solution is in github-pages under Environments of the repo.
+- Solution URL: [Click 'View Deployment'](https://github.com/fturak/notifications-page-challenge/deployments/activity_log?environment=github-pages)
 
 ## My process
 
